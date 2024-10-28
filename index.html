@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sajib Halder</title>
+    <link rel="icon" href="image/icon.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-gray-800">Sajib Halder</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-800 hover:text-blue-600">Home</a>
+                    <a href="#about" class="text-gray-800 hover:text-blue-600">About</a>
+                    <a href="#social" class="text-gray-800 hover:text-blue-600">Social</a>
+                    <a href="#contact" class="text-gray-800 hover:text-blue-600">Contact</a>
+                </div>
+                <button class="md:hidden" id="menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <a href="#home" class="block py-2 px-4 text-gray-800 hover:bg-gray-200">Home</a>
+            <a href="#about" class="block py-2 px-4 text-gray-800 hover:bg-gray-200">About</a>
+            <a href="#social" class="block py-2 px-4 text-gray-800 hover:bg-gray-200">Social</a>
+            <a href="#contact" class="block py-2 px-4 text-gray-800 hover:bg-gray-200">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 md:pt-32 pb-16 bg-gradient-to-r from-blue-500 to-purple-500">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 text-center md:text-left text-white">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Sajib Halder</h1>
+                    <p class="text-xl mb-8">Chemistry Graduate</p>
+                    <a href="#contact" class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition duration-300">Get in Touch</a>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <img src="/image/SajibPhoto.jpg" alt="Profile" class="rounded-full mx-auto w-64 h-64 object-cover border-4 border-white shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Education</h3>
+                    <div class="mb-4">
+                        <p class="font-semibold">Chemistry Honours</p>
+                        <p class="text-gray-600">BL College Khulna</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Skills</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-100 p-4 rounded">
+                            <p class="font-semibold">Chemistry</p>
+                            <div class="w-full bg-gray-200 rounded h-2 mt-2">
+                                <div class="bg-blue-600 rounded h-2 w-4/5"></div>
+                            </div>
+                        </div>
+                        <!-- <div class="bg-gray-100 p-4 rounded">
+                            <p class="font-semibold">Web Development</p>
+                            <div class="w-full bg-gray-200 rounded h-2 mt-2">
+                                <div class="bg-blue-600 rounded h-2 w-3/4"></div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Connect With Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/sajib.halder.123276" target="_blank" 
+                   class="flex items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <i class="fab fa-facebook text-3xl text-blue-600"></i>
+                    <div class="ml-4">
+                        <h3 class="font-bold">Facebook</h3>
+                        <p class="text-sm text-gray-600">@sajib.halder.123276</p>
+                    </div>
+                </a>
+
+                <!-- Twitter/X -->
+                <a href="https://x.com/sajib05041999" target="_blank"
+                   class="flex items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <i class="fab fa-twitter text-3xl text-black"></i>
+                    <div class="ml-4">
+                        <h3 class="font-bold">Twitter/X</h3>
+                        <p class="text-sm text-gray-600">@sajib05041999</p>
+                    </div>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/sajib-halder-8b29101a9" target="_blank"
+                   class="flex items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <i class="fab fa-linkedin text-3xl text-blue-700"></i>
+                    <div class="ml-4">
+                        <h3 class="font-bold">LinkedIn</h3>
+                        <p class="text-sm text-gray-600">Sajib Halder</p>
+                    </div>
+                </a>
+
+                <a href="https://www.threads.net/@real_life_post321" target="_blank"
+                    class="flex items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <i class="fas fa-link text-3xl text-black"></i> <!-- Updated icon -->
+                    <div class="ml-4">
+                        <h3 class="font-bold">Threads</h3>
+                        <p class="text-sm text-gray-600">@real_life_post321</p>
+                    </div>
+                </a>
+
+                <!-- Skype -->
+                <a href="https://join.skype.com/invite/cjTPhtw6m4la" target="_blank"
+                   class="flex items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <i class="fab fa-skype text-3xl text-blue-500"></i>
+                    <div class="ml-4">
+                        <h3 class="font-bold">Skype</h3>
+                        <p class="text-sm text-gray-600">Join Meeting</p>
+                    </div>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/qr/RFMUNHATKXBCL1" target="_blank"
+                   class="flex items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <i class="fab fa-whatsapp text-3xl text-green-500"></i>
+                    <div class="ml-4">
+                        <h3 class="font-bold">WhatsApp</h3>
+                        <p class="text-sm text-gray-600">Message Me</p>
+                    </div>
+                </a>
+                <a href="https://discord.com/users/sajibsbhalder6829" onclick="copyDiscord(event)" 
+                   class="flex items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <i class="fab fa-discord text-3xl text-indigo-600"></i>
+                    <div class="ml-4">
+                        <h3 class="font-bold">Discord</h3>
+                        <p class="text-sm text-gray-600">sajibsbhalder6829</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Me</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+                    <div class="space-y-4">
+                        <p class="flex items-center">
+                            <i class="fas fa-phone w-6"></i>
+                            <span class="ml-2">+880 1648505338</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope w-6"></i>
+                            <span class="ml-2">sajib05.04.1999@gmail.com</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- <div>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Name</label>
+                            <input type="text" class="w-full p-2 border rounded focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" class="w-full p-2 border rounded focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Message</label>
+                            <textarea class="w-full p-2 border rounded focus:outline-none focus:border-blue-500" rows="4"></textarea>
+                        </div>
+                        <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition duration-300">Send Message</button>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+    </section>
+     <!-- New Footer Section -->
+     <footer class="bg-gray-800 text-white mt-auto">
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-blue-400 transition duration-300">Home</a></li>
+                        <li><a href="#about" class="hover:text-blue-400 transition duration-300">About</a></li>
+                        <li><a href="#social" class="hover:text-blue-400 transition duration-300">Social</a></li>
+                        <li><a href="#contact" class="hover:text-blue-400 transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Me</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/sajib.halder.123276" target="_blank" class="hover:text-blue-400 transition duration-300">
+                            <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                        <a href="https://x.com/sajib05041999" target="_blank" class="hover:text-blue-400 transition duration-300">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sajib-halder-8b29101a9" target="_blank" class="hover:text-blue-400 transition duration-300">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="https://discord.com/users/sajibsbhalder6829" onclick="copyDiscord(event)" class="hover:text-blue-400 transition duration-300">
+                            <i class="fab fa-discord fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <p class="flex items-center mb-2">
+                        <i class="fas fa-phone w-6"></i>
+                        <span class="ml-2">+880 1648505338</span>
+                    </p>
+                    <p class="flex items-center">
+                        <i class="fas fa-envelope w-6"></i>
+                        <span class="ml-2">sajib05.04.1999@gmail.com</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2024 Sajib Halder. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu after clicking
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+    </script>
+    
+</body>
+</html>
